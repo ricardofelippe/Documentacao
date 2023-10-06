@@ -1,0 +1,6 @@
+# COMO EXTRAIR O CÓDIGO HTML DOS GRÁFICOS
+
+06/10/2023
+1) Construir os gráficos na linguagem MARKDOWN(extensão .md)
+2) No PREVIEW(ctrl+shift+v), salvar e extrair o código HTML com cnd
+3) Abrir a página salva e extrair o codigo de interesse
