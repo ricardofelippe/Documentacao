@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Protótipos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-sequence-diagram@2.0.1/dist/sequence-diagram.min.js"></script>
+
+    <!--
+  Novos Frameworks utilizados
+  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.5.0/dist/mermaid.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.9.1/skins/default.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.9.1/wavedrom.min.js"></script>
+
+    <style>
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1></h1>
+        <h1>First Experiments</h1>
+        <p>Responsive Page!</p>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top:30px">
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>Protótipo 1</h2>
+                <h5>Registro:</h5>
+                <img src="./Fotos/Prototipo_1_Telemetria/foto1.jpg" alt="HTML5 Icon" style="width:256px;height:250px;">
+                <p>Protótipo Telemetria Google-Esp 32- O Rele é acionado a partir da planilha Google..</p>
+                <hr class="d-sm-none">
+            </div>
+            <div class="col-sm-4">
+                <h2>Protótipo 1</h2>
+                <h5>Registro 2:</h5>
+                <img src="Fotos/Prototipo_1_Telemetria/foto2.jpg" alt="HTML5 Icon" style="width:256px;height:250px;">
+                <hr class="d-sm-none">
+            </div>
+            <div class="col-sm-4">
+                <h2>Protótipo 1</h2>
+                <h5>Registro 3:</h5>
+                <img src="Fotos/Prototipo_1_Telemetria/foto3.jpg" alt="HTML5 Icon" style="width:256px;height:250px;">
+                <hr class="d-sm-none">
+            </div>
+            <div class="col-sm-4">
+                <h2>TITLE HEADING 1</h2>
+                <h5>Title description, Dec 7, 2017</h5>
+                <div class="mermaid">
+                    flowchart LR
+                    A[Hard] -->|Text| B(Round)
+                    B --> C{Decision}
+                    C -->|One| D[Result 1]
+                    C -->|Two| E[Result 2]
+                </div>
+                <div class="mermaid">
+                    stateDiagram-v2
+                    [*] --> Still
+                    Still --> [*]
+                    Still --> Moving
+                    Moving --> Still
+                    Moving --> Crash
+                    Crash --> [*]
+                </div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <br>
+            </div>
+            <div id="diagram"></div>
+            <script>
+                var diagram = Diagram.parse("A->B: Message");
+                diagram.drawSVG("diagram", { theme: 'hand' });
+            </script>
+            <div class="col-sm-4">
+                <h2>TITLE HEADING 2</h2>
+                <h5>Title description, Dec 7, 2017</h5>
+                <div class="mermaid">
+                    flowchart LR
+                    A[Hard] -->|Text| B(Round)
+                    B --> C{Decision}
+                    C -->|One| D[Result 1]
+                    C -->|Two| E[Result 2]
+                </div>
+                <div class="mermaid">
+                    stateDiagram-v2
+                    [*] --> Still
+                    Still --> [*]
+                    Still --> Moving
+                    Moving --> Still
+                    Moving --> Crash
+                    Crash --> [*]
+                </div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <br>
+            </div>
+            <div class="col-sm-4">
+                <h2>Equação 2</h2>
+                <h5>Equação 2</h5>
+                <div class="crossnote markdown-preview">
+                    <p>Math block:<br>
+                        <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><msup><mrow><mo fence="true">(</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>a</mi><mi>k</mi></msub><msub><mi>b</mi><mi>k</mi></msub><mo fence="true">)</mo></mrow><mn>2</mn></msup><mo>≤</mo><mrow><mo fence="true">(</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msubsup><mi>a</mi><mi>k</mi><mn>2</mn></msubsup><mo fence="true">)</mo></mrow><mrow><mo fence="true">(</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msubsup><mi>b</mi><mi>k</mi><mn>2</mn></msubsup><mo fence="true">)</mo></mrow></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle
+        \left( \sum_{k=1}^n a_k b_k \right)^2
+        \leq
+        \left( \sum_{k=1}^n a_k^2 \right)
+        \left( \sum_{k=1}^n b_k^2 \right)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.2561em;vertical-align:-1.3021em;"></span><span class="minner"><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">(</span></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6514em;"><span style="top:-1.8479em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.3021em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size4">)</span></span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.954em;"><span style="top:-4.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:3.0521em;vertical-align:-1.3021em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">(</span></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6514em;"><span style="top:-1.8479em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.3021em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-2.453em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size4">)</span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">(</span></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6514em;"><span style="top:-1.8479em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.3021em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-2.453em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size4">)</span></span></span></span></span></span></span>
+                    </p>
+                </div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <br>
+            </div>
+            <div class="col-sm-4">
+                <h2>Equação 3</h2>
+                <h5>Equação 3</h5>
+                <div class="crossnote markdown-preview">
+                    <p>Math block:<br>
+                        <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><msup><mrow><mo fence="true">(</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>a</mi><mi>k</mi></msub><msub><mi>b</mi><mi>k</mi></msub><mo fence="true">)</mo></mrow><mn>2</mn></msup><mo>≤</mo><mrow><mo fence="true">(</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msubsup><mi>a</mi><mi>k</mi><mn>2</mn></msubsup><mo fence="true">)</mo></mrow><mrow><mo fence="true">(</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msubsup><mi>b</mi><mi>k</mi><mn>2</mn></msubsup><mo fence="true">)</mo></mrow></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle
+        \left( \sum_{k=1}^n a_k b_k \right)^2
+        \leq
+        \left( \sum_{k=1}^n a_k^2 \right)
+        \left( \sum_{k=1}^n b_k^2 \right)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.2561em;vertical-align:-1.3021em;"></span><span class="minner"><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">(</span></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6514em;"><span style="top:-1.8479em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.3021em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size4">)</span></span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.954em;"><span style="top:-4.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:3.0521em;vertical-align:-1.3021em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">(</span></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6514em;"><span style="top:-1.8479em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.3021em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-2.453em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size4">)</span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">(</span></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6514em;"><span style="top:-1.8479em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.3021em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-2.453em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size4">)</span></span></span></span></span></span></span>
+                    </p>
+                </div>
+                <p>Some text..</p>
+                <p>xxxxxxxxxxxxxxx.</p>
+                <br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>About Me 2</h2>
+                <h5>Photo of me:</h5>
+                <div class="mermaid">
+                    sequenceDiagram
+                    A-->B: Works!
+                </div>
+                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                <hr class="d-sm-none">
+            </div>
+            <div class="col-sm-8">
+                <div class="wavedrom">
+                    <script type="WaveDrom">
+                        {
+                            signal: [
+                                { name: "clk", wave: "p.....|..." },
+                                { name: "Data", wave: "x.345x|=.x", data: ["head", "body", "tail", "data"] },
+                                { name: "Request", wave: "0.1..0|1.0" },
+                                {},
+                                { name: "Acknowledge", wave: "1.....|01." }
+                            ]
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="wavedrom">
+                    <script type="WaveDrom">
+                        {
+                            signal: [
+                                { name: "clk", wave: "p.....|..." },
+                                { name: "Data", wave: "x.345x|=.x", data: ["head", "body", "tail", "data"] },
+                                { name: "Request", wave: "0.1..0|1.0" },
+                                {},
+                                { name: "Acknowledge", wave: "1.....|01." }
+                            ]
+                        }
+                    </script>
+                </div>
+            </div>
+            <script>WaveDrom.ProcessAll()</script>
+
+            <div class="col-sm-8">
+                <div class="crossnote markdown-preview">
+                    <div class="mermaid">
+                        gantt
+                        title My Product Roadmap
+                        dateFormat YYYY-MM-DD
+                        section Cool Feature
+                        A task :a1, 2022-02-25, 30d
+                        Another task :after a1, 20d
+                        section Rad Feature
+                        Task in sequence :2022-03-04, 12d
+                        Task, No. 2 :24d
+                    </div>
+                </div>
+
+                <script type="module">
+                    var MERMAID_CONFIG = { "startOnLoad": false };
+                    if (typeof MERMAID_CONFIG !== 'undefined') {
+                        MERMAID_CONFIG.startOnLoad = false
+                        MERMAID_CONFIG.cloneCssStyles = false
+                        MERMAID_CONFIG.theme = "default"
+                    }
+
+                    mermaid.initialize(MERMAID_CONFIG || {})
+                    if (typeof(window['Reveal']) !== 'undefined') {
+                        function mermaidRevealHelper(event) {
+                            var currentSlide = event.currentSlide
+                            var diagrams = currentSlide.querySelectorAll('.mermaid')
+                            for (var i = 0; i < diagrams.length; i++) {
+                                var diagram = diagrams[i]
+                                if (!diagram.hasAttribute('data-processed')) {
+                                    mermaid.init(null, diagram, () => {
+                                        Reveal.slide(event.indexh, event.indexv)
+                                    })
+                                }
+                            }
+                        }
+                        Reveal.addEventListener('slidetransitionend', mermaidRevealHelper)
+                        Reveal.addEventListener('ready', mermaidRevealHelper)
+                        await mermaid.run({
+                            nodes: document.querySelectorAll('.mermaid')
+                        })
+                    } else {
+                        await mermaid.run({
+                            nodes: document.querySelectorAll('.mermaid')
+                        })
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <li><a href="Boom-Kicad.html"><i class="fa fa-clock-o "></i> Boom-Kicad</a></li>
+    <iframe src="Boom-Kicad.html" width="100%" height="600"></iframe>
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <p>Footer</p>
+    </div>
+
+</body>
+
+</html>
