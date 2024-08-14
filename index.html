@@ -57,7 +57,8 @@
                       <ul class="list-group">
                           <div class="row">
                               <div class="lead-article-title col-md-10">
-                                  <li class="list-group-item"><i class="fa fa-cogs" aria-hidden="true"></i> Prototype 002: Oscilloscope + Button Reaction
+                                  <li class="list-group-item"><i class="fa fa-cogs" aria-hidden="true"></i> Prototype 001: Oscilloscope + Button Reaction: In this section, we'll do an experiment that involves an Arduino, a button, and an Led.
+                                    We are going to use the oscilloscope to measure how long it takes the Arduino to turn on the Led.
                                       <div class="row">
                                           <div class="lead-article-title col-md-10">
                                               <a href="https://ricardofelippe.github.io/Documentacao/Prototypes/prototipo002/prototipo002.html"><h5 itemprop="name headline"><i class="fa fa-html5" aria-hidden="true"></i><code>Oscilloscope + Button Reaction </code></h5></a>
@@ -72,7 +73,7 @@
                                           </div>
                                       </div>
                                   </li>
-                                  <li class="list-group-item"><i class="fa fa-cogs" aria-hidden="true"></i> Prototype 003: Oscilloscope + Ultrasonic sensor
+                                  <li class="list-group-item"><i class="fa fa-cogs" aria-hidden="true"></i> Prototype 002: xxxxxxxxx
                                     
                                       <div class="row">
                                           <div class="lead-article-title col-md-10">
@@ -158,6 +159,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="panel-group">
               <!-- Outer Panel -->
               <div class="panel panel-default">
@@ -168,13 +170,41 @@
                   </div>
                   <div id="collapse3" class="panel-collapse collapse">
                       <div class="panel-body">
-                          Content of Panel 1
+                        
+                        <div class="row">
+                            <div class="col-md-10">
+                                Content :In this section, we'll experiment with the ultrasonic distance sensor. what's important to know is that this sensor uses ultrasound to measure the distance between
+                                itself and an object in front of it. When it makes a measurement, it reports the distance back to the Arduino by creating a square wave                                
+                                with a width that depends on the measured distance.
+
+                            </div>
+                            <div class="col-md-2 text-right">
+                                <h4>
+                                    <small>
+                                        <time datetime="2018-04-21T00:00:00-03:00" itemprop="datePublished">13/08/2024</time>
+                                    </small>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="https://gist.github.com/ricardofelippe/e9befcb92ee84816414b1af459d5516c">
+                                    <h5 itemprop="name headline">
+                                        <i class="fa fa-github" aria-hidden="true"></i>
+                                        <code>Code</code>
+                                    </h5>
+                                </a>
+                            </div>
+                        </div>
+                        
+                          
+                          
           
                           <!-- Nested Panel -->
                           <div class="panel panel-default">
                               <div class="panel-heading">
                                   <h4 class="panel-title">
-                                      <a data-toggle="collapse" href="#collapse1-1">Protoboard</a>
+                                      <a data-toggle="collapse" href="#collapse1-1"><i class="fa fa-file-image-o" aria-hidden="true"></i> Arduino circuit and sketch</a>
                                   </h4>
                               </div>
                               
@@ -210,22 +240,174 @@
                                     </div>
                                       
                                 </div>
+                                
+                                
                               </div>
-                          </div>
+                              
+                              
+                        </div>
                           <!-- End of Nested Panel -->
+                          
+                          
           
                       </div>
+                      
                   </div>
+                  
               </div>
-          </div>
+            </div>
+
+            <div class="panel-group">
+            <!-- Outer Panel -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse4"><i class="fa fa-signal" aria-hidden="true"></i> Prototype with PWM Signal</a>
+                    </h4>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      
+                      <div class="row">
+                          <div class="col-md-10">
+                              Content : In this section, we'll use the oscilloscope to measure various parameters of a PWM signal.
+
+                          </div>
+                          <div class="col-md-2 text-right">
+                              <h4>
+                                  <small>
+                                      <time datetime="2018-04-21T00:00:00-03:00" itemprop="datePublished">13/08/2024</time>
+                                  </small>
+                              </h4>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                              <a href="https://gist.github.com/ricardofelippe/e9befcb92ee84816414b1af459d5516c">
+                                  <h5 itemprop="name headline">
+                                      <i class="fa fa-github" aria-hidden="true"></i>
+                                      <code>Code</code>
+                                  </h5>
+                              </a>
+                          </div>
+                      </div>
+                      
+                        
+                        
+        
+                        <!-- Nested Panel -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#collapse4-1"><i class="fa fa-file-image-o" aria-hidden="true"></i> Arduino circuit and sketch</a>
+                                </h4>
+                            </div>
+                            
+                            <div id="collapse4-1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                     
+                                    <div class="col-sm-3">
+                                      <h2>Long Distance measure with Sensor</h2>
+                                      
+                                      <img src="Fotos/Prototipo_3_Osc_UltraSound/Foto1.png" alt="HTML5 Icon" style="width:256px;height:250px;">
+                                      
+                                      <hr class="d-sm-none">
+                                  </div>
+                                  <div class="col-sm-3">
+                                      <h2>Registro 2</h2>
+                                      
+                                      <img src="Fotos/Prototipo_1_Telemetria/foto3.jpg" alt="HTML5 Icon" style="width:256px;height:250px;">
+                                      
+                                      <hr class="d-sm-none">
+                                  </div>
+                                  <div class="col-sm-3">
+                                      <h2>Registro 3</h2>
+                                      
+                                      <img src="Fotos/Prototipo_1_Telemetria/foto3.jpg" alt="HTML5 Icon" style="width:256px;height:250px;">
+                                      
+                                      <hr class="d-sm-none">
+                                  </div>
+                                  <div class="col-sm-3">
+                                      <h2>Registro 4</h2>
+                                      <img src="Fotos/Prototipo_1_Telemetria/foto3.jpg" alt="HTML5 Icon" style="width:256px;height:250px;">
+                                      
+                                      <hr class="d-sm-none">
+                                  </div>
+                                    
+                              </div>
+                              
+                              
+                            </div>
+                            
+                            
+                      </div>
+                        <!-- End of Nested Panel -->
+
+                        
+                        <!-- Nested Panel -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#collapse5-1"><i class="fa fa-file-image-o" aria-hidden="true"></i> Results</a>
+                                </h4>
+                            </div>
+                            
+                            <div id="collapse5-1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                     
+                                    <div class="col-sm-3">
+                                      <h2>Long Distance measure with Sensor</h2>
+                                      
+                                      <img src="Fotos/Prototipo_3_Osc_UltraSound/Foto1.png" alt="HTML5 Icon" style="width:256px;height:250px;">
+                                      
+                                      <hr class="d-sm-none">
+                                  </div>
+                                  <div class="col-sm-3">
+                                      <h2>Registro 2</h2>
+                                      
+                                      <img src="Fotos/Prototipo_1_Telemetria/foto3.jpg" alt="HTML5 Icon" style="width:256px;height:250px;">
+                                      
+                                      <hr class="d-sm-none">
+                                  </div>
+                                  <div class="col-sm-3">
+                                      <h2>Registro 3</h2>
+                                      
+                                      <img src="Fotos/Prototipo_1_Telemetria/foto3.jpg" alt="HTML5 Icon" style="width:256px;height:250px;">
+                                      
+                                      <hr class="d-sm-none">
+                                  </div>
+                                  <div class="col-sm-3">
+                                      <h2>Registro 4</h2>
+                                      <img src="Fotos/Prototipo_1_Telemetria/foto3.jpg" alt="HTML5 Icon" style="width:256px;height:250px;">
+                                      
+                                      <hr class="d-sm-none">
+                                  </div>
+                                    
+                              </div>
+                              
+                              
+                            </div>
+                            
+                            
+                      </div>
+                        <!-- End of Nested Panel -->
+                        
+                        
+        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            </div>
           
 
             
 
 
             
-        </div>
     </div>
+</div>
 </body>
 
 </html>
